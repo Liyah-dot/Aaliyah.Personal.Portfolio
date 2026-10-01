@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaliyah Wiltshire | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Aaliyah Wiltshire, a secondary school student learning HTML and building on the web." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <header class="nav">
+    <a class="logo" href="#home">AW<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">Hello, world — I’m</p>
+      <h1>Aaliyah <span>Wiltshire</span></h1>
+      <p class="tagline">Secondary School Student · Learning to build on the web</p>
+      <p class="lede">
+        I design bright, neon-inspired pages with HTML and CSS.
+        This site is my first public portfolio — a place to grow, share projects, and say hello.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div class="card glow">
+          <h3>Who I am</h3>
+          <p>
+            I’m Aaliyah Wiltshire, a secondary school student curious about how websites come to life.
+            I started with HTML and I’m building my way through CSS, layout, and interactivity.
+          </p>
+          <p>
+            I like clean structure, glowing colour, and pages that feel fun to scroll.
+            School keeps me busy — coding is how I practise focus and creativity after class.
+          </p>
+        </div>
+        <div class="card glow">
+          <h3>What I’m aiming for</h3>
+          <ul class="checklist">
+            <li>Write tidy, readable HTML</li>
+            <li>Style pages that work on phones and laptops</li>
+            <li>Share small projects as I learn</li>
+            <li>Keep this portfolio updated as my skills grow</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-label">01</span>
+          <h3>HTML</h3>
+          <p>Page structure, headings, links, forms, and semantic tags.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-label">02</span>
+          <h3>CSS</h3>
+          <p>Colours, layout, fonts, hover effects, and responsive design.</p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-label">03</span>
+          <h3>Learning next</h3>
+          <p>More JavaScript, better accessibility, and extra personal projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="section-note">New work will land here. This portfolio is project one.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-badge">Live</div>
+          <h3>Neon Portfolio</h3>
+          <p>
+            A one-page personal site built with HTML, CSS, and a little JavaScript.
+            Features a glowing theme, mobile menu, and a contact form.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+        <article class="project-card coming">
+          <div class="project-badge">Soon</div>
+          <h3>Next build</h3>
+          <p>
+            Slot for a school assignment, a mini game, or a themed landing page.
+            Replace this card when you finish something new.
+          </p>
+          <div class="tags">
+            <span>Coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="section-note">Want to say hi? Use the form or any of the links below.</p>
+
+      <div class="contact-grid">
+        <form class="card glow" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required placeholder="Write a short message"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="formStatus" hidden></p>
+        </form>
+
+        <div class="socials">
+          <a class="social-link" href="https://github.com/Liyah-dot" target="_blank" rel="noopener noreferrer">
+            <strong>GitHub</strong>
+            <span>@Liyah-dot</span>
+          </a>
+          <a class="social-link" href="mailto:Aaliyahwiltshire0@gmail.com">
+            <strong>Email</strong>
+            <span>Aaliyahwiltshire0@gmail.com</span>
+          </a>
+          <a class="social-link" href="https://instagram.com/AALIYAH_1661" target="_blank" rel="noopener noreferrer">
+            <strong>Instagram</strong>
+            <span>@AALIYAH_1661</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Aaliyah Wiltshire. Built with HTML, CSS &amp; a spark of neon.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+        </html>
